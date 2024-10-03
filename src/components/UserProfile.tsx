@@ -1,10 +1,5 @@
 import React from "react";
-
-interface UserProfileProps {
-  name: string;
-  email: string;
-  phone: string;
-}
+import { UserProfileProps } from "../types";
 
 const UserProfile: React.FC<UserProfileProps> = ({ name, email, phone }) => {
   return (

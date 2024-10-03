@@ -1,10 +1,5 @@
 import React from "react";
-import { Post } from "../types";
-
-interface UserActivitiesProps {
-  posts: Post[];
-  userId: number;
-}
+import { UserActivitiesProps } from "../types";
 
 const UserActivities: React.FC<UserActivitiesProps> = ({ posts }) => {
   return (

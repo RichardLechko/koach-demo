@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import { User } from "../types";
+import { UserSearchProps } from "../types";
 import { Link } from "react-router-dom";
-
-interface UserSearchProps {
-  users: User[];
-}
 
 const UserSearch: React.FC<UserSearchProps> = ({ users }) => {
   const [searchTerm, setSearchTerm] = useState("");
