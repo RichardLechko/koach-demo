@@ -27,7 +27,7 @@ A simple React application for searching user profiles and viewing their activit
 To run the application, use the following command:
 
 ```bash
-npm start
+npm run dev
 ```
 
 This will start the development server and open the application in your default web browser.

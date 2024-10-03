@@ -46,8 +46,6 @@ const App: React.FC = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <div className="container mx-auto mt-8 mb-16 p-16 bg-white rounded-lg shadow-lg flex-grow">
-          {" "}
-          {/* Add flex-grow here */}
           <h1 className="text-3xl font-bold text-center mb-4">User Search</h1>
           <UserSearch users={users} />
           <Routes>
@@ -62,7 +60,7 @@ const App: React.FC = () => {
 
 const UserPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const userId = Number(id); // Convert string ID to number
+  const userId = Number(id);
 
   const [user, setUser] = useState<User | null>(null);
   const [posts, setPosts] = useState<Post[]>([]);
@@ -71,8 +69,8 @@ const UserPage: React.FC = () => {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      setLoading(true); // Start loading
-      setError(null); // Reset error state
+      setLoading(true);
+      setError(null);
 
       try {
         const userResponse = await axios.get<User>(
@@ -100,7 +98,7 @@ const UserPage: React.FC = () => {
         }
       }
 
-      setLoading(false); // End loading
+      setLoading(false);
     };
 
     fetchUserData();

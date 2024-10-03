@@ -1,4 +1,3 @@
-// src/components/UserSearch.tsx
 import React, { useState } from "react";
 import { User } from "../types";
 import { Link } from "react-router-dom";
